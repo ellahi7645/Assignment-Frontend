@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment – Frontend</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+<form name="myform" method="post" action="sucess.html" onsubmit="return validateform()" >
+    <div class="form">
+			<div class="inputfield">
+				<label>Title</label>
+				<div class="custom_select">
+					<select>
+						<option value="">Mr</option>
+						<option value="male">Mrs</option>
+						<option value="female">Ms</option>
+					</select>
+				</div>
+		 </div>
+
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" placeholder="Enter yourfirst name" name="name" class="input" required>
+       </div>
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text"placeholder="Enter your last name" class="input" required>
+       </div>
+			 <div class="inputfield">
+				 <label>Email Address</label>
+				 <input type="email" placeholder="Enter your email" name="email" id="email_form" class="input" required>
+			</div>
+       <div class="inputfield">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" name="password" class="input" required>
+       </div>
+      <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" name="password2" class="input">
+       </div>
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter your phone number" name="num" class="input" maxlength="10"  min="10"  required>
+       </div>
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea placeholder="Enter your Full address here" class="textarea"></textarea>
+       </div>
+
+      <div class="inputfield">
+        <input type="submit" value="submit" class="btn">
+      </div>
+    </div>
+</div>
+<div class="copyrights">
+<h6>&copy;Copyright 2020 - by Basharat Ellahi</h6>
+</div>
+</form>
+
+<script src="fields-validation.js"></script>    <!--link to the source file of javascript function-->
+
+</body>
+</html>
